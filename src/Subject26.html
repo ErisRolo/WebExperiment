@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>计算连续若干个倒数的和</title>
+	<script type="text/javascript">
+		var n = prompt("输入数N：","");
+		var sum = 0;
+		var newSum = 0;
+		if(n != "" && n != null) {
+			if (n%1 === 0) {
+				for (i=1; i<=n; i++) {
+					sum += 1/i;
+				}
+				newSum = (sum*100-sum*100%1)/100;
+			}
+		} else {
+			alert("数不能为空！");
+			location.reload();
+		}
+	</script>
+</head>
+
+<body>
+	<h2>计算1+1/2+1/3+...+1/n的和</h2>
+	<p>
+		<font>连续</font>
+		<span id="n"></span>
+		<font>个倒数的和=</font>
+		<span id="sum"></span>
+	</p>
+	<script>document.getElementById("n").innerHTML = n;</script>
+	<script>document.getElementById("sum").innerHTML = sum;</script>
+	<p>保留两位小数后结果为：<span id="newSum" /></p>
+	<script>document.getElementById("newSum").innerHTML = newSum;</script>
+</body>
+
+</html>

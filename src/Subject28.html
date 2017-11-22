@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>计算N个随机2位整数的和</title>
+	<script type="text/javascript">
+		var n = prompt("输入数N：","");
+		var m = n;
+		var string = '';
+		var sum = 0;
+		for (var i = 0; i < n; i++) {
+			var num = Math.round(Math.random()*(99-10)+10);
+			string += num + ' ';
+			sum += num;
+		}
+	</script>
+</head>
+
+<body>
+	<h3>计算N个随机2位整数的和</h3>
+	<p>
+		<span id="n"></span>
+		<font>个随机2位整数：</font>
+		<span id="string"></span>
+	</p>
+	<script>document.getElementById("n").innerHTML = n;</script>
+	<script>document.getElementById("string").innerHTML = string;</script>
+	<p>
+		<span id="m"></span>
+		<font>个随机2位整数的和=</font>
+		<span id="sum"></span>
+	</p>
+	<script>document.getElementById("m").innerHTML = m;</script>
+	<script>document.getElementById("sum").innerHTML = sum;</script>
+</body>
+
+</html>

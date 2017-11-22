@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>厂字型页面布局</title>
+	<style type="text/css">
+		frame{
+			border: 3px blue solid;
+		}
+	</style>
+</head>
+
+<frameset rows="10%,80%,10%">
+	<frame src="top.html">
+	<frameset cols="25%,75%">
+		<frame src="left.html">
+		<frame src="right.html" noresize="noresize">
+	</frameset>
+	<frame src="bottom.html">
+</frameset>
+
+<noframes>
+	<body>
+		您的浏览器无法处理框架！
+	</body>
+</noframes>
+
+</html>

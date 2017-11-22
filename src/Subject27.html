@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>教学信息反馈</title>
+	<style type="text/css">
+		form{
+			width: 500px;
+			height: 300px;
+		}
+	</style>
+	<script type="text/javascript">
+		function Submit() {
+			alert("提交成功！");
+		}
+		function Reset() {
+			document.getElementById('number').value = '';
+			document.getElementById('name').value = '';
+			document.getElementById('advice').value = '请输入意见';
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend><h3>教学信息反馈</h3></legend>
+			<table>
+				<tr>
+					<td>学号：<input id="number" type="text" maxlength="10"></td>
+					<td>姓名：<input id="name" type="text" maxlength="8"></td>
+				</tr>
+				<tr>
+					<td>
+						<font>课程：</font>
+						<select>
+							<option selected>Web前端开发技术</option>
+							<option>数据结构</option>
+							<option>Java</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>教学反馈意见：<textarea id="advice" cols="40" rows="5">请输入意见</textarea></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="提交" onClick="Submit()">
+						<input type="reset" value="重置" onClick="Reset()">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+
+</html>

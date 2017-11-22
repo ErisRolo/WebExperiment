@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>框架页面布局</title>
+	<style type="text/css">
+		div{
+			margin: 0;
+			padding: 0;
+		}
+		.top{
+			width: 100%;
+			height: 150px;
+		}
+		.main{
+			width: 100%;
+			height: 700px;
+		}
+		.left{
+			width: 30%;
+			height: 700px;
+			float: left;
+			border: 2px #A6A6A6 solid;
+			border-left-style: none;
+			border-top-width: 1%;
+			border-bottom-style: 1%;
+		}
+		.center{
+			width: 38%;
+			height: 700px;
+			float: left;
+			border-width: 1%;
+			border: 2px #A6A6A6 solid;
+		}
+		.right{
+			width: 30%;
+			height: 700px;
+			float: left;
+			border: 2px #A6A6A6 solid;
+			border-right-style: none;
+			border-top-width: 1%;
+			border-bottom-style: 1%;
+		}
+		.bottom{
+			width: 100%;
+			height: 150px;
+		}
+</style>
+</head>
+
+<body>
+<div>
+	<div class="top"><frame src="top.html"/></div>
+	<div class="main">
+		<div class="left"><frame src="left.html"/></div>
+		<div class="center"><frame src="center.html" /></div>
+		<div class="right"><frame src="right.html"/></div>
+	</div>
+	<div class="bottom"><frame src="bottom.html"/></div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>福利彩票投注助手</title>
+	<style type="text/css">
+		div{
+			width: 350px;
+			height: 100px;
+			float: left;
+			background-color: #27AF12;
+		}
+		.a{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		.b{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<script type="text/javascript">
+		function Betting(){
+			var mText = '';
+			for(var i = 0; i < 7; i++) {
+				var num = Math.round(Math.random()*(30-1)+1);
+				if(num < 10) {
+					mText += '0' + (num) + ' ';
+				} else {
+					mText += (num) + ' ';
+				}
+			}
+			document.getElementById('mText').value = mText.toString();
+		}
+		function Clear(){
+			document.getElementById('mText').value = '';
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+		<p class="a">
+			<img src="7乐彩.jpg" width="50px" height="50px" align="left"/>
+			<font color="#FFFFFF"><b>福利彩票投注助手</b></font>
+		</p>
+		<br>
+		<br>
+		<p class="b">
+			<strong>彩票号码</strong>
+			<input type="text" id="mText" size="25">
+			<input type="button" id="mBettingBtn" value="投注" onClick="Betting();">
+			<input type="button" id="mClearBtn" value="清空" onClick="Clear();">
+		</p>
+	</div>
+</body>
+
+</html>
